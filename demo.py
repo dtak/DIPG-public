@@ -11,8 +11,6 @@ Created on Wed May 30 02:20:55 2018
 #Toy 2D Grid environment adapted from: https://github.com/dtak/hip-mdp-public/blob/master/grid_simulator/grid.py
 # MMD based regularization is the main contribution
 
-import os
-os.chdir('/Users/arjumand/Desktop/DIPG_DEMO')
 import numpy as np
 
 
@@ -95,7 +93,6 @@ for path, count in zip(all_states, range(len(all_states))):
 
 
 plt.title('DIPG' + ' Performance')
-plt.legend(loc = 'best')
 plt.tight_layout()
 plt.savefig('DIPG_Performance.png')
 
