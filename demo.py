@@ -17,9 +17,7 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 import dipg as DIPG #Diversity-Inducing Policy Gradient
-reload(DIPG)
 import toy_2d_domain as toy_env
-reload(toy_env)
 
 #Experiment Settings
 max_episode_length = 40
@@ -95,8 +93,6 @@ for path, count in zip(all_states, range(len(all_states))):
 plt.title('DIPG' + ' Performance')
 plt.tight_layout()
 plt.savefig('DIPG_Performance.png')
-
-print "Number of Distinct Goals Reached:", 
 
 print('Number of Distinct Goals {}\n Number of Policies: {}'.format(
                         len(np.unique(goals_reached)),n_policies))
